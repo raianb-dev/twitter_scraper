@@ -19,8 +19,8 @@ import numpy as np
 # Config of navigation heders requests
 
 head = {
-        'x-guest-token':'1559599654475632641',
-        'authorization':'Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA'
+        'x-guest-token':'',
+        'authorization':''
 }
 
 baseUrl = 'https://twitter.com/i/api/1.1/users/recommendations.json?limit=100'# <-- Config limit of users scraper
