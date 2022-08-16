@@ -10,7 +10,7 @@ Theoretical Test: *twitter_scraper/Answers.md*
 
 User-agent: Googlebot
 
-*Allow: /i/api/* 
+*Allow: /i/api/**
 
 check: https://twitter.com/Robots.txt
 
