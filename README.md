@@ -10,7 +10,7 @@ Theoretical Test: *twitter_scraper/Answers.md*
 
 User-agent: Googlebot
 
-*Allow: /i/api/* 
+*Allow: /i/api/**
 
 check: https://twitter.com/Robots.txt
 
@@ -32,9 +32,10 @@ pip install pandas
 pip install numpy
 pip install requests
 ```
-#### run:
+#### Run:
 
 ``` main.ipynb``` for Jupyter Notebook, Python3
 
 ``` main.py``` for Python2
 
+#### Consult data in: *twitter_scraper/dataset.xlsx*
