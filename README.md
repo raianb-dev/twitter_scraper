@@ -27,8 +27,8 @@ head = {'x-guest-token':'','authorization':''}
 
 ``` 
 pip install pandas
-pip instal numpy
-
+pip install numpy
+pip install requests
 ```
 #### run:
 
