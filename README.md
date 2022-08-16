@@ -1,7 +1,9 @@
-# twtter_scraper
+# twitter_scraper
 
 1nfluencersmarketing.com
 @Author : Raian Barbosa
+
+Theoretical Test: *twitter_scraper/Answers.md*
 
 
 ## Google Search Engine Robot
