@@ -51,7 +51,7 @@ df1 = df1[[  # Select colluns of table
             
         ]]
 
-df1 = df1[0:51] # Range of scraper
+df1 = df1[0:60] # using range 60 to avoid noise
 
 var = df1['id'] 
 users_id = []
@@ -172,14 +172,14 @@ retweet = 0
 mean_quote = 0
 mean_reply = 0
 mean_tweet = 0
-last_10 = []
+users = []
 
 
 # Scraping data from public url allowed by 'Tweet'
 
-for x in range(51):
-    if x == 40:
-        continue    # delete ruids is here 
+for x in range(60):
+    #if x == 40:
+        #continue    # delete ruids is here 
     print(x)
 
     user_id = users_id[x]
@@ -232,18 +232,15 @@ for x in range(51):
     
 
     
-    print(mean_quote)
-    
     # Adding data to a list
-    last_10.append([user_id, quote, reply, retweet, median_day, median_week, median_month, mean_day, mean_week, mean_month])
+    users.append([user_id, quote, reply, retweet, median_day, median_week, median_month, mean_day, mean_week, mean_month])
     
-    print(last_10)
 
 
 # In[30]:
 
 
-df2 = pd.DataFrame(last_10)
+df2 = pd.DataFrame(users)
 
 # Defining name for shaved columns
 df2.rename(columns = {
@@ -260,7 +257,7 @@ df2.rename(columns = {
 
 
 df = pd.merge(df1, df2, how = 'inner', on = 'id') # Merge between df1 and df2
-
+df = df[0:50]# using range 50 set in test
 
 df.to_excel('dataset.xlsx') # Exporting analysis report
 
