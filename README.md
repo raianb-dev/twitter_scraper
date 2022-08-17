@@ -6,9 +6,9 @@
 Theoretical Test: *twitter_scraper/Answers.md*
 
 
-## Google Search Engine Robot
+## Every bot that might possibly read and respect this file
 
-User-agent: Googlebot
+User-agent: *
 
 *Allow: /i/api/**
 
